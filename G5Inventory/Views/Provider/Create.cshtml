@@ -1,0 +1,38 @@
+﻿@model ProviderModel
+@{
+    ViewData["Title"] = "Nuevo Proveedor";
+}
+
+<h1> Nuevo Proveedor</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div asp-validation-summary="ModelOnly"></div>
+            <form asp-action="Create">
+                @Html.AntiForgeryToken()
+                <div class="mb-3">
+                    <label asp-for="ProviderName" class="form-label">Nombre</label>
+                    <input asp-for="ProviderName" type="text" class="form-control">
+                    <span asp-validation-for="ProviderName" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Phone" class="form-label">Telefono</label>
+                    <input asp-for="Phone" type="text" class="form-control">
+                    <span asp-validation-for="Phone" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Email" class="form-label">Email</label>
+                    <input asp-for="Email" type="text" class="form-control">
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="mb-3">
+                    <label asp-for="Delivery" class="form-label">Delivery</label>
+                    <input asp-for="Delivery" type="text" class="form-control">
+                    <span asp-validation-for="Delivery" class="text-danger"></span>
+                </div>
+                <button type="submit" class="btn btn-primary">Agregar</button>
+            </form>
+        </div>
+    </div>
+</div>

@@ -5,7 +5,11 @@ namespace G5Inventory.Data
 {
     public class ConnectionData
     {
+<<<<<<< HEAD
         private static string connectionString = "Data Source=AARONLAPTOP\\CONNECT;Initial Catalog=G5Inventory;Integrated Security=True;Encrypt=False;";
+=======
+        private static string connectionString = "Data Source=U20210475\\SQLEXPRESS;Initial Catalog=G5Inventory;Integrated Security=True;Encrypt=False";
+>>>>>>> 6e33593 (Parte de Carlos)
 
         public static string Connection()
         {

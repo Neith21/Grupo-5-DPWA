@@ -6,7 +6,11 @@ namespace G5Inventory.Data
 {
     public class CategoryData
     {
+<<<<<<< HEAD
         string connectionString = @"Data Source=AARONLAPTOP\CONNECT;Initial Catalog=G5Inventory;Integrated Security=True;Encrypt=False;";
+=======
+        string connectionString = @"Data Source=U20210475\SQLEXPRESS;Initial Catalog=G5Inventory;Integrated Security=True;Encrypt=False";
+>>>>>>> 6e33593 (Parte de Carlos)
 
         public IEnumerable<CategoryModel> GetAll()
         {
