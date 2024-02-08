@@ -5,7 +5,7 @@ namespace G5Inventory.Data
 {
     public class ConnectionData
     {
-        private static string connectionString = "Data Source=DPCA\\U20210463;Initial Catalog=G5Inventory;Integrated Security=True;Encrypt=False";
+        private static string connectionString = "Data Source=AARONLAPTOP\\CONNECT;Initial Catalog=G5Inventory;Integrated Security=True;Encrypt=False;";
 
         public static string Connection()
         {

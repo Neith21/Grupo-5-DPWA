@@ -1,0 +1,30 @@
+﻿@model CategoryModel
+@{
+    ViewData["Title"] = "Editar Categorias";
+}
+
+<h1>Editar Categoría</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <form asp-action="Edit">
+                @Html.AntiForgeryToken()
+                <div class="mb-3">
+                    <input asp-for="IdCategory" type="hidden" class="form-control">
+                    <label asp-for="CategoryName" class="form-label">Nombre</label>
+                    <input asp-for="CategoryName" type="text" class="form-control">
+                    <label asp-for="CategoryInfo" class="form-label">Información</label>
+                    <textarea asp-for="CategoryInfo" type="text" class="form-control">Descripción de la categoría</textarea>
+                    <label asp-for="CategoryCode" class="form-label">Codigo</label>
+                    <input asp-for="CategoryCode" type="text" class="form-control">
+                    <label asp-for="CategoryStatus" class="form-label">Estado</label>
+                    <input asp-for="CategoryStatus" type="text" class="form-control">
+
+                </div>
+                <button type="submit" class="btn btn-primary">Editar </button>
+            </form>
+
+        </div>
+    </div>
+</div>

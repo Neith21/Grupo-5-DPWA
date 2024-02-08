@@ -1,0 +1,58 @@
+﻿@model IEnumerable<CategoryModel>
+@{
+    ViewData["Title"] = "Categorias";
+}
+
+<h1>Lista de categorias</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+
+            <div class="mt-3 mb-3">
+                <a asp-action="Create" asp-controller="Category" class="btn btn-success">
+                    Nueva Categoria
+                </a>
+            </div>
+
+            <table class="table table-bordered table-striped table-responsive">
+                <thead>
+                    <tr>
+                        <th>Id</th>
+                        <th>Nombre</th>
+                        <th>Información</th>
+                        <th>Código</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var category in Model)
+                    {
+                        <tr>
+                            <td>@Html.DisplayFor(item => category.IdCategory)</td>
+                            <td>@Html.DisplayFor(item => category.CategoryName)</td>
+                            <td>@Html.DisplayFor(item => category.CategoryInfo)</td>
+                            <td>@Html.DisplayFor(item => category.CategoryCode)</td>
+                            <td>@Html.DisplayFor(item => category.CategoryStatus)</td>
+                            <td>
+                                <a asp-controller="Category"
+                                   asp-action="Edit"
+                                   asp-route-id="@category.IdCategory"
+                                   class="btn btn-success">
+                                    Editar
+                                </a>
+                                <a asp-controller="Category"
+                                   asp-action="Delete"
+                                   asp-route-id="@category.IdCategory"
+                                   class="btn btn-danger">
+                                    Eliminar
+                                </a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

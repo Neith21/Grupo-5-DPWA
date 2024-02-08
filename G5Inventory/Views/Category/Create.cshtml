@@ -1,0 +1,44 @@
+﻿@model CategoryModel
+@{
+    ViewData["Title"] = "Nueva categoria";
+}
+
+<h1>Agregar categoría</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div asp-validation-summary="ModelOnly"></div>
+            <form asp-action="Create">
+                @Html.AntiForgeryToken()
+                <div class="mb-3">
+                    <input asp-for="IdCategory" type="hidden" class="form-control">
+                    <label asp-for="CategoryName" class="form-label">Nombre</label>
+                    <input asp-for="CategoryName" type="text" class="form-control">
+                    <span asp-validation-for="CategoryName" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CategoryInfo" class="form-label">Información</label>
+                    <textarea asp-for="CategoryInfo" type="text" class="form-control">Descripción de la categoría</textarea>
+                    <span asp-validation-for="CategoryInfo" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CategoryCode" class="form-label">Codigo</label>
+                    <input asp-for="CategoryCode" type="text" class="form-control">
+                    <span asp-validation-for="CategoryCode" class="text-danger"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label asp-for="CategoryStatus" class="form-label">Estado</label>
+                    <input asp-for="CategoryStatus" type="text" class="form-control">
+                    <span asp-validation-for="CategoryStatus" class="text-danger"></span>
+                </div>
+               
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+
+        </div>
+    </div>
+</div>

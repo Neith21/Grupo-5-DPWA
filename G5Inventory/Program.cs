@@ -1,6 +1,7 @@
 using FluentValidation;
 using G5Inventory.Models;
 using G5Inventory.Validations;
+using G5Inventory.Validatios;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -8,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IValidator<ProductModel>, ProductValidator>();
+builder.Services.AddScoped<IValidator<CategoryModel>, CategoryValidator>();
 
 var app = builder.Build();
 
