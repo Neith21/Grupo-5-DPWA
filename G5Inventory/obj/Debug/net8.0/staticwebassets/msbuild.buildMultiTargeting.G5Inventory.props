@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\G5Inventory.props" />
+</Project>

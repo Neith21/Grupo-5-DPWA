@@ -1,0 +1,63 @@
+﻿@model ProductModel
+
+@{
+    ViewData["Title"] = "Eliminar Empleado";
+}
+
+<h1>Eliminar Empleado</h1>
+
+<h3>¿Está seguro que desea eliminar?</h3>
+<div>
+
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdProduct)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdProduct)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.ProductName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.ProductName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdCategory)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdCategory)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IdProvider)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IdProvider)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Expiration)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Expiration)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Stock)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Stock)
+        </dd>
+    </dl>
+
+    <form asp-action="Delete">
+        <input asp-for="IdProduct" type="hidden" class="form-control" />
+        <input type="submit" value="Eliminar" class="btn btn-danger" />
+        <a asp-action="Index" class="btn btn-primary">Regresar al listado</a>
+    </form>
+</div>

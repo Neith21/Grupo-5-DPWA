@@ -1,0 +1,50 @@
+﻿@model ProductModel
+@{
+	ViewData["Title"] = "Nuevo Producto";
+}
+
+<h1>Nuevo Producto</h1>
+
+<div class="container">
+	<div class="row">
+		<div class="col-md-12">
+
+			<div asp-validation-summary="ModelOnly"></div>
+
+			<form asp-action="Create">
+				@Html.AntiForgeryToken()
+				<div class="mb-3">
+					<label asp-for="ProductName" class="form-label">Nombre</label>
+					<input asp-for="ProductName" type="text" class="form-control" />
+					<span asp-validation-for="ProductName" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="Price" class="form-label">Precio</label>
+					<input asp-for="Price" type="text" class="form-control" />
+					<span asp-validation-for="Price" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="IdCategory" class="form-label">Categoría</label>
+					<input asp-for="IdCategory" type="text" class="form-control" />
+					<span asp-validation-for="IdCategory" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="IdProvider" class="form-label">Proveedor</label>
+					<input asp-for="IdProvider" type="text" class="form-control" />
+					<span asp-validation-for="IdProvider" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="Expiration" class="form-label">Vencimiento</label>
+					<input asp-for="Expiration" type="text" class="form-control" />
+					<span asp-validation-for="Expiration" class="text-danger"></span>
+				</div>
+				<div class="mb-3">
+					<label asp-for="Stock" class="form-label">Stock</label>
+					<input asp-for="Stock" type="text" class="form-control" />
+					<span asp-validation-for="Stock" class="text-danger"></span>
+				</div>
+				<button type="submit" class="btn btn-primary">Aceptar</button>
+			</form>
+		</div>
+	</div>
+</div>
