@@ -10,10 +10,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IValidator<ProductModel>, ProductValidator>();
 builder.Services.AddScoped<IValidator<CategoryModel>, CategoryValidator>();
-<<<<<<< HEAD
-=======
 builder.Services.AddScoped<IValidator<ProviderModel>, ProviderValidator>();
->>>>>>> 6e33593 (Parte de Carlos)
 
 var app = builder.Build();
 

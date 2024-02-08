@@ -3,9 +3,12 @@ GO
 USE G5Inventory;
 GO
 
-CREATE TABLE Categories(
+CREATE TABLE Category(
     IdCategory INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
     CategoryName NVARCHAR(50) NOT NULL,
+	CategoryInfo NVARCHAR(50),
+	CategoryCode NVARCHAR(5),
+	CategoryStatus NVARCHAR(15)
 );
 GO
 
@@ -19,12 +22,12 @@ CREATE TABLE Providers(
 GO
 
 CREATE TABLE Products(
-    IdProduct INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
-    ProductName NVARCHAR(75) NOT NULL,
-    Price MONEY NOT NULL,
-    IdCategory INT NOT NULL,
-    IdProvider INT NOT NULL,
-    Expiration DATE NOT NULL,
-    Stock INT NOT NULL
+	IdProduct INT NOT NULL PRIMARY KEY IDENTITY(1, 1),
+	ProductName NVARCHAR(75) NOT NULL,
+	Price MONEY NOT NULL,
+	IdCategory INT NOT NULL,
+	IdProvider INT NOT NULL,
+	Expiration DATE NOT NULL,
+	Stock INT NOT NULL
 );
 GO

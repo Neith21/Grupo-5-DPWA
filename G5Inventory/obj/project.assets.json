@@ -509,24 +509,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\sraar\\.nuget\\packages\\": {},
-    "D:\\Program Files\\Visual Studio 2022\\Shared\\NuGetPackages": {}
+    "C:\\Users\\crist\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\sraar\\Grupo-5-DPWA\\G5Inventory\\G5Inventory.csproj",
+      "projectUniqueName": "C:\\Users\\crist\\Downloads\\Grupo-5-DPWA-main\\G5Inventory\\G5Inventory.csproj",
       "projectName": "G5Inventory",
-      "projectPath": "C:\\Users\\sraar\\Grupo-5-DPWA\\G5Inventory\\G5Inventory.csproj",
-      "packagesPath": "C:\\Users\\sraar\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\sraar\\Grupo-5-DPWA\\G5Inventory\\obj\\",
+      "projectPath": "C:\\Users\\crist\\Downloads\\Grupo-5-DPWA-main\\G5Inventory\\G5Inventory.csproj",
+      "packagesPath": "C:\\Users\\crist\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\crist\\Downloads\\Grupo-5-DPWA-main\\G5Inventory\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "D:\\Program Files\\Visual Studio 2022\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\sraar\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\crist\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -534,7 +529,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

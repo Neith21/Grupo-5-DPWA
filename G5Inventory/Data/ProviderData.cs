@@ -6,7 +6,7 @@ namespace G5Inventory.Data
 {
     public class ProviderData
     {
-        string connectionString = "Data Source=U20210475\\SQLEXPRESS;Initial Catalog=G5Inventory;Integrated Security=True;Encrypt=False";
+        string connectionString = "Data Source=DPCA\\U20210463;Initial Catalog=G5Inventory;Integrated Security=True;Encrypt=False";
 
         public IEnumerable<ProviderModel> GetAll()
         {
